@@ -1,0 +1,12 @@
+Step_1: After qPCR assay normalize your data applying deltaCT. For normalization use geometric mean of ACTB (gene ID: 60), GAPDH (gene ID: 2597) and YWHAZ (gene ID:7534).
+Step_2: Calculate fold change according to the formula: log(base:2) 2^(-deltaCT)
+Step_3: Download and install machine learning and data mining toolbox "Orange" from: https://orangedatamining.com/download/#windows
+Step_4: Normalize your gene expression data to standard score: z=(x-/x̄)
+			Use predesigned orange pipeline that performs normalization described in step_4. Load your data using 'Load your data' widget.
+Step_5: Save your normalized data into .xlsx format using 'Save data" widget.
+Not necessary:If you also need to know the probability of predicted subtype open your .xlsx file with normalized data and insert new column.
+Add column name. Type the exact name 'GeneExp_Subtype' and write randomly one of three subtypes: 'Classical' or 'Mesenchymal' or 'Proneural' in new column for each case. Save your file.
+Step_6: Load your data file. Open 'Load normalized data' widget in 'Orange' app and change 'GeneExp_Subtype' role from 'feature' to 'target'.
+Step_7: Load 5-gene or 20-gene model using 'Load model' widget. The designed pipeline calculates molecular subtype for each given case.
+Open 'Predictions' widget to see the results.
+Step_8: Save your results into new excel or other type file with predicted subtype and/or the probability of predicted subtype signature using 'Save predicted Subtype' widget.

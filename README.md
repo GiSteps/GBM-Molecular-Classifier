@@ -5,5 +5,5 @@ This repository contains Human Glioblastoma Molecular Classification tool that i
 In order to classify your glioblastoma cohort you need to download the provided file package into your computer and follow the instructions given in the "instructions.txt" file.
 The package includes:
 Subtyping model;
-Data normalization and file architecture instruction;
-General usage instruction.
+Data normalization and file architecture instructions;
+General usage instructions.
